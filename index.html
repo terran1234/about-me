@@ -81,8 +81,11 @@
   .strength .num{font-family:var(--mono); font-size:11.5px; color:var(--accent); font-weight:600; letter-spacing:.1em; margin-bottom:10px;}
   .strength h3{font-family:var(--disp); font-size:18px; font-weight:700; margin-bottom:12px;}
   .strength p{font-size:14.5px; color:var(--ink-dim); margin-bottom:16px; max-width:600px;}
+  .strength p.result{color:var(--ink); font-weight:600;}
   .evidence{display:flex; flex-wrap:wrap; gap:8px;}
-  .evidence span{font-size:12px; background:var(--accent-soft); color:var(--accent); border-radius:7px; padding:5px 11px; font-weight:600;}
+  .evidence span, .evidence a{font-size:12px; background:var(--accent-soft); color:var(--accent); border-radius:7px; padding:5px 11px; font-weight:600; text-decoration:none;}
+  .evidence a{cursor:pointer;}
+  .evidence a:hover{background:#ded9f8;}
 
   /* mode */
   .mode-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
@@ -174,23 +177,26 @@
         <div class="num">STRENGTH 01</div>
         <h3>나만의 학습 시스템 설계</h3>
         <p>시키는 사람이 없어도 스스로 공부 시스템을 설계합니다. 멘토에게 부탁해 출석 체크 장치를 만들고, 복습 6단계 구조 같은 방법을 직접 고안해 '나한테 맞는 방식'을 찾아 쓰는 편입니다.</p>
-        <div class="evidence"><span>복습 6단계 구조 설계</span><span>출석 체크 장치 요청</span></div>
+        <p class="result">→ 정보처리기사 필기 합격, 국비 수업 진도를 따라가는 데 큰 도움이 됐습니다.</p>
+        <div class="evidence"><span>복습 6단계 구조 설계</span><span>출석 체크 장치 요청</span><span>정보처리기사 필기 합격</span></div>
       </div>
 
       <div class="strength">
         <span class="bignum" aria-hidden="true">02</span>
         <div class="num">STRENGTH 02</div>
         <h3>완주하는 힘</h3>
-        <p>정해진 문제나 완주해야 할 랩이 있을 때, 즉 끝이 보이는 개인 작업에서 가장 강한 모습을 보입니다.</p>
-        <div class="evidence"><span>PMA 랩</span><span>webhacking.kr</span><span>Natas</span><span>DVWA</span><span>CTF 문제 출제</span></div>
+        <p>정해진 커리큘럼이 있는 일은 중도 포기하지 않고 끝까지 참여합니다. 약 5개월간 진행된 국비 교육과정(2026.03.24 ~ 2026.08.07)을 완주했습니다.</p>
+        <p class="result">→ 국비 교육과정 수료증을 받았습니다.</p>
+        <div class="evidence"><a href="evidence/수료증.png" target="_blank" rel="noopener">수료증 보기 ↗</a></div>
       </div>
 
       <div class="strength">
         <span class="bignum" aria-hidden="true">03</span>
         <div class="num">STRENGTH 03</div>
         <h3>추진력</h3>
-        <p>스터디처럼 강제성이 없는 상황에서도 필요한 것을 파악하면 바로 실행에 옮깁니다. 고민하기보다는 일단 해보면서 조정하는 방식을 선호합니다.</p>
-        <div class="evidence"><span>자발적 스터디 운영</span></div>
+        <p>스터디처럼 강제성이 없는 상황에서도 필요한 것을 파악하면 바로 실행에 옮깁니다. 원래는 소극적인 편이었지만, 국비 과정에서 진행한 프로젝트 3회 동안 매번 발표를 자원해서 맡았습니다. 스터디도 국비 때는 3명이 모여 2개월간, 지금은 알레프에서 5명이 모여 2주째 주말마다 진행 중입니다.</p>
+        <p class="result">→ 3차 프로젝트에서 우수상을 받았습니다.</p>
+        <div class="evidence"><span>자발적 스터디 운영</span><span>발표 자원</span><a href="evidence/우수상.png" target="_blank" rel="noopener">우수상 보기 ↗</a></div>
       </div>
     </section>
 
