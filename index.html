@@ -305,6 +305,17 @@
   }
   document.addEventListener('scroll', onScroll, {passive:true});
   onScroll();
+
+  // explicit keyboard toggle for details/summary (defense-in-depth alongside native behavior)
+  document.querySelectorAll('details.more summary').forEach(function(s){
+    s.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar'){
+        e.preventDefault();
+        var d = s.closest('details');
+        d.open = !d.open;
+      }
+    });
+  });
 </script>
 </body>
 </html>
