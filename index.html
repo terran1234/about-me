@@ -309,7 +309,7 @@
   // explicit keyboard toggle for details/summary (defense-in-depth alongside native behavior)
   document.querySelectorAll('details.more summary').forEach(function(s){
     s.addEventListener('keydown', function(e){
-      if(e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar'){
+      if(e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar' || e.code === 'Space' || e.code === 'Enter' || e.keyCode === 32 || e.keyCode === 13){
         e.preventDefault();
         var d = s.closest('details');
         d.open = !d.open;
