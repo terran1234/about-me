@@ -92,6 +92,16 @@
   .evidence a{cursor:pointer;}
   .evidence a:hover{background:#ded9f8;}
 
+  details.more{margin-top:4px;}
+  details.more summary{list-style:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:600; color:var(--accent); padding:4px 0; user-select:none;}
+  details.more summary::-webkit-details-marker{display:none;}
+  details.more summary::before{content:''; width:7px; height:7px; border-right:2px solid var(--accent); border-bottom:2px solid var(--accent); transform:rotate(-45deg); transition:transform .2s ease; margin-bottom:2px;}
+  details.more[open] summary::before{transform:rotate(45deg);}
+  details.more summary:focus-visible{outline:3px solid var(--accent); outline-offset:3px; border-radius:4px;}
+  details.more[open] summary{margin-bottom:12px;}
+  details.more p, details.more .evidence{margin-bottom:0;}
+  details.more p{margin-top:12px; margin-bottom:14px;}
+
   /* mode */
   .mode-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
   @media (max-width:640px){.mode-grid{grid-template-columns:1fr;}}
@@ -189,27 +199,36 @@
         <span class="bignum" aria-hidden="true">01</span>
         <div class="num">STRENGTH 01</div>
         <h3>나만의 학습 시스템 설계</h3>
-        <p>시키는 사람이 없어도 스스로 공부 시스템을 설계합니다. 멘토에게 부탁해 출석 체크 장치를 만들고, 복습 6단계 구조 같은 방법을 직접 고안해 '나한테 맞는 방식'을 찾아 쓰는 편입니다.</p>
         <p class="result">→ 정보처리기사 필기 합격, 국비 수업 진도를 따라가는 데 큰 도움이 됐습니다.</p>
-        <div class="evidence"><span>복습 6단계 구조 설계</span><span>출석 체크 장치 요청</span><span>정보처리기사 필기 합격</span></div>
+        <details class="more">
+          <summary>자세히 보기</summary>
+          <p>시키는 사람이 없어도 스스로 공부 시스템을 설계합니다. 멘토에게 부탁해 출석 체크 장치를 만들고, 복습 6단계 구조 같은 방법을 직접 고안해 '나한테 맞는 방식'을 찾아 쓰는 편입니다.</p>
+          <div class="evidence"><span>복습 6단계 구조 설계</span><span>출석 체크 장치 요청</span><span>정보처리기사 필기 합격</span></div>
+        </details>
       </div>
 
       <div class="strength">
         <span class="bignum" aria-hidden="true">02</span>
         <div class="num">STRENGTH 02</div>
         <h3>완주하는 힘</h3>
-        <p>정해진 커리큘럼이 있는 일은 중도 포기하지 않고 끝까지 참여합니다. 약 5개월간 진행된 국비 교육과정(2026.03.24 ~ 2026.08.07)을 완주했습니다.</p>
         <p class="result">→ 국비 교육과정 수료증을 받았습니다.</p>
-        <div class="evidence"><a href="evidence/수료증.png" target="_blank" rel="noopener">수료증 보기 ↗</a></div>
+        <details class="more">
+          <summary>자세히 보기</summary>
+          <p>정해진 커리큘럼이 있는 일은 중도 포기하지 않고 끝까지 참여합니다. 약 5개월간 진행된 국비 교육과정(2026.03.24 ~ 2026.08.07)을 완주했습니다.</p>
+          <div class="evidence"><a href="evidence/수료증.png" target="_blank" rel="noopener">수료증 보기 ↗</a></div>
+        </details>
       </div>
 
       <div class="strength">
         <span class="bignum" aria-hidden="true">03</span>
         <div class="num">STRENGTH 03</div>
         <h3>추진력</h3>
-        <p>스터디처럼 강제성이 없는 상황에서도 필요한 것을 파악하면 바로 실행에 옮깁니다. 원래는 소극적인 편이었지만, 국비 과정에서 진행한 프로젝트 3회 동안 매번 발표를 자원해서 맡았습니다. 스터디도 국비 때는 3명이 모여 2개월간, 지금은 알레프에서 5명이 모여 2주째 주말마다 진행 중입니다.</p>
         <p class="result">→ 3차 프로젝트에서 우수상을 받았습니다.</p>
-        <div class="evidence"><span>자발적 스터디 운영</span><span>발표 자원</span><a href="evidence/우수상.png" target="_blank" rel="noopener">우수상 보기 ↗</a></div>
+        <details class="more">
+          <summary>자세히 보기</summary>
+          <p>스터디처럼 강제성이 없는 상황에서도 필요한 것을 파악하면 바로 실행에 옮깁니다. 원래는 소극적인 편이었지만, 국비 과정에서 진행한 프로젝트 3회 동안 매번 발표를 자원해서 맡았습니다. 스터디도 국비 때는 3명이 모여 2개월간, 지금은 알레프에서 5명이 모여 2주째 주말마다 진행 중입니다.</p>
+          <div class="evidence"><span>자발적 스터디 운영</span><span>발표 자원</span><a href="evidence/우수상.png" target="_blank" rel="noopener">우수상 보기 ↗</a></div>
+        </details>
       </div>
     </section>
 
